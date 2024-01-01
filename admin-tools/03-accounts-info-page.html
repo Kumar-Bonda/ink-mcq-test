@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <title>INK MCQ Test - Signed Accounts</title>
+
+    <!-- font-styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Onest:wght@300;500;700&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="icon" href="../data/icons/ink-192x192.png">
+
+    <!-- css-styles -->
+    <link rel="stylesheet" href="../styles/general.css">
+    <link rel="stylesheet" href="./styles/03-accounts-info-page.css">
+</head>
+<body>
+    <header class="header">
+        <p class="header-label">Signed Accounts</p>
+        <div class="date-and-time">
+            <p class="js-date date"></p>
+            <p class="js-time time">hh:mm AM</p>
+        </div>
+    </header>
+
+    <div class="suggested-buttons">
+        <a href="./02-admin-menu-page.html" class="goToMenu-button">Go to Menu</a>
+        <a href="./05-delete-account-page.html" class="deleteAccount-page">Delete Account</a>
+        <a href="./04-add-account-page.html" class="addAccount-page">Add Account</a>
+    </div>
+
+    <div class="js-accounts-info-container accounts-info-container">
+        <div class="account-details">
+            <p style="
+                font-size: 20px;
+                font-weight: bold;
+                justify-content: center;
+            ">
+                <img src="../data/icons/no-accounts-icon.svg">
+                &nbsp; No Records
+            </p>
+        </div>
+    </div>
+
+    <script type="module" src="./scripts/03-accounts-info-page.js"></script>
+</body>
+</html>

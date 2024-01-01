@@ -1,0 +1,547 @@
+body {
+    margin-top: 150px;
+}
+
+.subject-info-header {
+    position: fixed;
+    top: 77px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.subject-info {
+    display: flex;
+    justify-content: space-between;
+    width: 540px;
+    border: 3px solid rgb(56, 173, 251);
+    background-color: white;
+    padding: 10px 10px;
+}
+
+.suggested-buttons {
+    margin: 0px auto 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 563px;
+    margin-bottom: 30px;
+}
+
+.goToMenu-button,
+.changePaper-page {
+    font-family: Onest;
+    text-decoration: none;
+    padding: 3px 10px;
+    background-color: rgb(48, 48, 56);
+    color: white;
+    border: 2px solid rgb(48, 48, 56);
+    border-radius: 4px;
+    cursor: pointer;
+    transition:
+        background-color 0.2s,
+        color 0.2s;
+}
+
+.goToMenu-button:hover,
+.changePaper-page:hover {
+    color: rgb(48, 48, 56);
+    background-color: white;
+}
+
+.goToMenu-button:active,
+.changePaper-page:active {
+    color: white;
+    background-color: rgb(106, 106, 118);
+}
+
+.subject-name-query,
+.no-question-paper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.35);
+    width: 550px;
+    height: 60px;
+    padding: 15px 5px;
+    margin: 0px auto 30px auto;
+}
+
+.no-question-paper {
+    flex-direction: column;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.no-question-paper img {
+    width: 27px;
+}
+
+.subject-name-query input {
+    font-family: Onest;
+    font-size: 16px;
+    text-align: center;
+    border: 2px solid rgb(48, 48, 56);
+    border-radius: 3px;
+    width: 180px;
+    height: 30px;
+    padding: 0px 10px;
+}
+
+.subject-name-query input::placeholder {
+    font-family: Onest;
+    font-size: 16px;
+    text-align: center;
+}
+
+.create-button,
+.add-button,
+.okay-button,
+.save-button,
+.cancel-button,
+.remove-button {
+    font-family: Onest;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 2px 8px;
+    background-color: rgb(48, 48, 56);
+    color: white;
+    border: 2px solid rgb(48, 48, 56);
+    border-radius: 4px;
+    cursor: pointer;
+    transition:
+        background-color 0.2s,
+        color 0.2s;
+}
+
+.create-button,
+.subject-name-query .save-button {
+    text-decoration: none;
+    font-size: 16px;
+    padding: 4.4px 10px;
+    margin-left: 15px;
+}
+
+.edit-button {
+    font-size: 16px;
+    padding: 4.4px 10px;
+}
+
+.add-button {
+    font-size: 16px;
+    padding: 6px 20px;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+
+.okay-button {
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.save-button {
+    text-decoration: none;
+}
+
+.remove-button {
+    margin-right: 20.5px;
+}
+
+.create-button:hover,
+.add-button:hover,
+.okay-button:hover,
+.save-button:hover,
+.cancel-button:hover,
+.remove-button:hover {
+    color: rgb(48, 48, 56);
+    background-color: white;
+}
+
+.create-button:active,
+.add-button:active,
+.okay-button:active,
+.save-button:active,
+.cancel-button:active,
+.remove-button:active {
+    color: white;
+    background-color: rgb(106, 106, 118);
+}
+
+.added-questions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.added-questions .message {
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.35);
+    width: 561px;
+    height: 180px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+
+    font-size: 16.5px;
+}
+
+.note-message {
+    width: 430px;
+    border: 2px solid rgb(48, 48, 56);
+    text-align: center;
+    padding: 2px 5px;
+    margin-top: 10px;
+    font-family: Onest;
+}
+
+.questions-container,
+.add-question-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.question-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.35);
+    border-radius: 4px;
+    width: 550px;
+    height: fit-content;
+    padding: 18px 5px;
+    margin-bottom: 30px;
+}
+
+.question-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.question {
+    width: 400px;
+    margin-left: 20.5px;
+}
+
+.option,
+.question-container input {
+    font-family: Onest;
+    display: flex;
+    align-items: center;
+    border: 2px solid rgb(48, 48, 56);
+    border-radius: 3px;
+    width: 492px;
+    height: 30px;
+    padding-left: 10px;
+    margin: 0px auto 0px auto;
+}
+
+.option {
+    height: fit-content;
+    padding: 4px 5px 4px 10px;
+    margin: 3px auto 3px auto;
+}
+
+.option:hover,
+.question-container input:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.correctAnswer {
+    border: 2px solid rgb(56, 173, 251);
+    background-color: rgb(56, 173, 251);
+    color: white;
+}
+
+.correctAnswer:hover {
+    background-color: rgb(56, 173, 251);
+}
+
+.add-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.question-container input {
+    font-size: 16px;
+}
+
+.question-container input::placeholder {
+    font-size: 16px;
+}
+
+.new-question-container {
+    height: 260px;
+}
+
+.new-question-container p {
+    margin-left: 22.5px;
+}
+
+.add-question-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.add-question-label .buttons {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 23.400px;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 110px;
+}
+
+.first-line,
+.second-line {
+    display: flex;
+    margin-left: 22.5px;
+    margin-right: 22.5px;
+}
+
+.first-line input,
+.second-line input {
+    width: 240px;
+}
+
+.popup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background: rgba(0, 0, 0, 0.55);
+    transition: all 0.7s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.popup-container:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background: white;
+    width: 430px;
+    height: 150px;
+    border-radius: 4px;
+}
+
+.popup-close {
+    position: absolute;
+    top: 2px;
+    right: 7px;
+    text-decoration: none;
+    font-size: 19px;
+    color: black;
+    width: 21px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.15s;
+}
+
+.popup-close:hover {
+    background-color: rgba(96, 96, 96, 0.45);
+}
+
+.empty-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
+    body {
+        margin-top: 132px;
+    }
+
+    .subject-info {
+        width: 330px;
+        font-size: 14.5px;
+        padding: 4px;
+    }
+
+    .suggested-buttons {
+        width: 340px;
+    }
+
+    .goToMenu-button,
+    .changePaper-page {
+        font-size: 14px;
+        padding: 3px 5px;
+    }
+
+    .subject-name-query {
+        width: 330px;
+        height: 50px;
+    }
+
+    .create-button {
+        font-size: 15px;
+        padding: 4px 8px;
+    }
+
+    .subject-name-query input {
+        width: 160px;
+        height: 28px;
+        font-size: 15px;
+    }
+
+    .subject-name-query input::placeholder {
+        font-size: 15px;
+    }
+
+    .subject-name-query .save-button {
+        font-size: 15px;
+        padding: 3px 8px;
+    }
+
+    .added-questions .message {
+        width: 340px;
+        height: 200px;
+    }
+
+    .note-message {
+        width: 280px;
+    }
+
+    .no-question-paper {
+        width: 330px;
+        height: 150px;
+        font-size: 20px;
+    }
+
+    .no-question-paper img {
+        width: 31px;
+    }
+
+    .question-container {
+        margin-top: -3px;
+        width: 330px;
+        padding: 15px 4px;
+    }
+
+    .question-container p {
+        font-size: 15px;
+    }
+
+    .question {
+        font-size: 15px;
+        margin-left: 18.4px;
+    }
+
+    .question-container input {
+        font-size: 15px;
+        width: 280px;
+        height: 28px;
+    }
+
+    .option {
+        font-size: 15px;
+        width: 280px;
+        padding: 4px 5px 4px 5px;
+        margin: 2px auto 2px auto;
+    }
+
+    .question-container input::placeholder {
+        font-size: 15px;
+    }
+
+    .remove-button,
+    .add-button,
+    .save-button,
+    .cancel-button,
+    .okay-button {
+        font-size: 15px;
+    }
+    
+    .add-button {
+        padding: 4px 18px;
+        margin-top: -8px;
+        margin-bottom: 20px;
+    }
+
+    .remove-button,
+    .save-button,
+    .cancel-button,
+    .okay-button {
+        font-size: 14px;
+        padding: 1px 8px;
+    }
+
+    .remove-button {
+        margin-right: 18.4px;
+    }
+
+    .new-question-container {
+        height: 240px;
+    }
+
+    .new-question-container p {
+        margin-left: 18.4px;
+    }
+
+    .new-question-container input {
+        height: 26px;
+        padding: 0px 5px;
+    }
+
+    .add-question-label {
+        margin-bottom: 2px;
+    }
+
+    .add-question-label .buttons {
+        width: 120px;
+        margin-right: 18.4px;
+    }
+
+    .options-container {
+        height: 95px;
+    }
+
+    .first-line,
+    .second-line {
+        margin: 0px 18.4px;
+    }
+
+    .first-line input,
+    .second-line input {
+        width: 125px;
+    }
+
+    .popup {
+        width: 320px;
+        height: 160px;
+    }
+
+    .empty-message {
+        font-size: 15px;
+    }
+}

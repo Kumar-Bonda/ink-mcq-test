@@ -1,0 +1,136 @@
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.result-label {
+    color: rgb(48, 48, 56);
+    font-family: 'DM Serif Display';
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.result-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.results {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.35);
+    border-radius: 4px;
+    width: 400px;
+    height: 220px;
+    padding: 15px 5px;
+    margin-bottom: 30px;
+}
+
+.score-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 70px;
+    border: 3px solid rgb(56, 173, 251);
+    border-radius: 10px;
+}
+
+.score-card p {
+    font-size: 23px;
+}
+
+.first-line,
+.second-line {
+    display: flex;
+    width: 305px;
+    justify-content: space-between;
+}
+
+.first-line p,
+.second-line p {
+    border: 2px solid rgb(48, 48, 56);
+    width: 140px;
+    text-align: center;
+}
+
+.close-link-container {
+    display: flex;
+    justify-content: center;
+}
+
+.close-link,
+.answer-sheet-link {
+    font-family: Onest;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 4px 20px;
+    background-color: rgb(48, 48, 56);
+    color: white;
+    border: 2px solid rgb(48, 48, 56);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: opacity 0.15s;
+}
+
+.close-link:hover,
+.answer-sheet-link:hover {
+    color: rgb(48, 48, 56);
+    background-color: white;
+}
+
+.close-link:active,
+.answer-sheet-link:active {
+    color: white;
+    background-color: rgb(106, 106, 118);
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+    .result-label {
+        font-size: 23px;
+    }
+    
+    .results {
+        width: 330px;
+        height: 205px;
+        padding: 10px 5px;
+    }
+
+    .score-card p {
+        font-size: 22px;
+    }
+
+    .first-line,
+    .second-line {
+        width: 280px;
+    }
+
+    .first-line p,
+    .second-line p {
+        width: 130px;
+    }
+    
+    .close-link,
+    .answer-sheet-link {
+        font-size: 15px;
+        padding: 4px 20px;
+    }
+
+    .close-link {
+        margin-top: -8px;
+    }
+}

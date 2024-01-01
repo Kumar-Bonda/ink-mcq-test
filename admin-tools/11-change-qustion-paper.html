@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <title>INK MCQ Test - Change Paper</title>
+
+    <!-- font-styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Onest:wght@300;500;700&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="icon" href="../data/icons/ink-192x192.png">
+
+    <!-- css-styles -->
+    <link rel="stylesheet" href="../styles/general.css">
+    <link rel="stylesheet" href="./styles/11-change-question-paper.css">
+</head>
+<body>
+    <header class="header">
+        <p class="header-label">Change Paper</p>
+        <div class="date-and-time">
+            <p class="js-date date"></p>
+            <p class="js-time time">hh:mm AM</p>
+        </div>
+    </header>
+
+    <div class="suggested-buttons">
+        <a href="./02-admin-menu-page.html" class="goToMenu-button">Go to Menu</a>
+        <a href="./10-add-remove-questions-page.html" class="addRemove-page">Add/Remove Question</a>
+    </div>
+
+    <p class="js-sugesstion-message sugesstion-message"></p>
+
+    <div class="js-available-papers available-papers">
+        <div class="no-question-papers">
+            <img src="../data/icons/no-data.svg">
+            <p>No Available Papers</p>
+        </div>
+    </div>
+
+    <div class="add-button-container">
+        <a href="./12-add-new-paper-page.html" class="add-button">Add New Paper</a>
+    </div>
+
+    <div id="popup-container" class="popup-container">
+        <div class="popup">
+            <div class="js-confirm-message confirm-message">
+                <p style="
+                    font-size: 18px;
+                    font-weight: bold;
+                ">nothing !</p>
+            </div>
+            <a href="#" class="popup-close">&#x2716;</a>
+        </div>
+    </div>
+
+    <script type="module" src="./scripts/11-change-question-paper.js"></script>
+</body>
+</html>

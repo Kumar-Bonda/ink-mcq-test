@@ -1,0 +1,241 @@
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.login-label {
+    color: rgb(48, 48, 56);
+    font-family: 'DM Serif Display';
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.login-details-container {
+    display: flex;
+    justify-content: center;
+}
+
+.login-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.35);
+    border-radius: 4px;
+    height: 220px;
+    width: 420px;
+}
+
+.suggestion-message {
+    color: rgb(48, 48, 56);
+}
+
+.username-line,
+.password-line {
+    width: 305px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-name,
+.password {
+    padding: 6px 10px;
+    width: 250px;
+    border-radius: 4px;
+    font-family: Onest;
+    font-size: 17px;
+}
+
+.user-name::placeholder,
+.password::placeholder {
+    font-family: Onest;
+}
+
+.login-button,
+.admin-menu-page-link,
+.close-link,
+.back-button {
+    font-family: Onest;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 4px 18px;
+    background-color: rgb(48, 48, 56);
+    color: white;
+    border: 2px solid rgb(48, 48, 56);
+    border-radius: 4px;
+    cursor: pointer;
+    transition:
+        background-color 0.2s,
+        color 0.2s;
+}
+
+.login-button:hover,
+.admin-menu-page-link:hover,
+.close-link:hover,
+.back-button:hover {
+    color: rgb(48, 48, 56);
+    background-color: white;
+}
+
+.login-button:active,
+.admin-menu-page-link:active,
+.close-link:active,
+.back-button:active {
+    color: white;
+    background-color: rgb(106, 106, 118);
+}
+
+.popup-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    background: rgba(0, 0, 0, 0.55);
+    transition: all 0.7s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.popup-container:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background: white;
+    width: 430px;
+    height: 150px;
+    border-radius: 4px;
+}
+
+.login-result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-close {
+    position: absolute;
+    top: 2px;
+    right: 7px;
+    text-decoration: none;
+    font-size: 19px;
+    color: black;
+    width: 21px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.15s;
+}
+
+.popup-close:hover {
+    background-color: rgba(96, 96, 96, 0.45);
+}
+
+.result-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.admin-menu-page-link,
+.close-link,
+.back-button {
+    margin-top: 20px;
+}
+
+.back-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.back-button {
+    padding: 4px 20px;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.author img {
+    width: 17px;
+}
+
+.author p {
+    color: black;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+    .login-label {
+        font-size: 23px;
+    }
+
+    .login-details {
+        height: 190px;
+        width: 340px;
+    }
+
+    .suggestion-message {
+        font-size: 15px;
+    }
+
+    .username-line,
+    .password-line {
+        width: 275px;
+    }
+
+    .username-line img,
+    .password-line img {
+        width: 23px;
+    }
+
+    .user-name,
+    .password {
+        padding: 6px 8px;
+        width: 230px;
+        font-size: 16px;
+    }
+
+    .login-button,
+    .admin-menu-page-link,
+    .close-link,
+    .back-button {
+        font-size: 15px;
+    }
+
+    .popup {
+        width: 320px;
+        height: 160px;
+    }
+}

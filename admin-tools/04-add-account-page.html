@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <title>INK MCQ Test - Add Account</title>
+
+    <!-- font-styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Onest:wght@300;500;700&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="icon" href="../data/icons/ink-192x192.png">
+
+    <!-- css-styles -->
+    <link rel="stylesheet" href="../styles/general.css">
+    <link rel="stylesheet" href="./styles/04-add-account-page.css">
+</head>
+<body>
+    <header class="header">
+        <p class="header-label">Add Account</p>
+        <div class="date-and-time">
+            <p class="js-date date"></p>
+            <p class="js-time time">hh:mm AM</p>
+        </div>
+    </header>
+
+    <p class="add-account-label">Add Account</p>
+    <div class="account-create-container">
+        <div class="account-adder">
+            <p class="suggestion-message">Add details that are not in the records.</p>
+            <div class="username-line">
+                <img src="../data/icons/user-account-icon.svg">
+                <input type="text" placeholder="Username" class="js-user-name user-name">
+            </div>
+            <div class="password-line">
+                <img src="../data/icons/password-icon.svg">
+                <input type="text" placeholder="Password" class="js-password password">
+            </div>
+            <a href="#popup-container"
+            class="js-add-button add-button">
+                Add Account
+            </a>
+        </div>
+    </div>
+
+    <div id="popup-container" class="popup-container">
+        <div class="popup">
+            <div class="js-sign-up-result sign-up-result">
+                <p style="
+                    font-size: 18px;
+                    font-weight: bold;
+                ">nothing !</p>
+            </div>
+            <a href="#" class="popup-close">&#x2716;</a>
+        </div>
+    </div>
+
+    <div class="suggested-buttons">
+        <a href="./02-admin-menu-page.html" class="goToMenu-button">Go to Menu</a>
+        <a href="./03-accounts-info-page.html" class="accountsInfo-page">Signed Accounts</a>
+        <a href="./05-delete-account-page.html" class="deleteAccount-page">Delete Account</a>
+    </div>
+
+    <table class="js-accounts-info-table accounts-info-table">
+        <tr>
+            <th>
+                <div class="table-header">
+                    <img src="../data/icons/user-account-icon.svg">
+                    <p>&nbsp; Accounts</p>
+                </div>
+            </th>
+            <th>
+                <div class="table-header">
+                    <img src="../data/icons/date-icon.svg">
+                    <p>&nbsp; Date Created</p>
+                </div>
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <b>No Records</b>
+            </td>
+            <td>
+                <b>No Records</b>
+            </td>
+        </tr>
+    </table>
+
+    <script type="module" src="./scripts/04-add-account-page.js"></script>
+</body>
+</html>

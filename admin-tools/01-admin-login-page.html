@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <title>INK MCQ Test - Admin Tools</title>
+
+    <!-- font-styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Onest:wght@300;500;700&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="icon" href="../data/icons/ink-192x192.png">
+
+    <!-- css-styles -->
+    <link rel="stylesheet" href="../styles/general.css">
+    <link rel="stylesheet" href="./styles/01-admin-login-page.css">
+</head>
+<body>
+    <header class="header">
+        <p class="header-label">Admin Tools</p>
+        <div class="date-and-time">
+            <p class="js-date date"></p>
+            <p class="js-time time">hh:mm AM</p>
+        </div>
+    </header>
+
+    <p class="login-label">Admin Login</p>
+    <div class="login-details-container">
+        <div class="login-details">
+            <p class="suggestion-message">Enter correct details.</p>
+            <div class="username-line">
+                <img src="../data/icons/admin-account-icon.svg">
+                <input type="text" placeholder="Username" class="js-user-name user-name">
+            </div>
+            <div class="password-line">
+                <img src="../data/icons/password-icon.svg">
+                <input type="text" placeholder="Password" class="js-password password">
+            </div>
+            <a href="#popup-container"
+            class="js-login-button login-button">
+                Login
+            </a>
+        </div>
+    </div>
+
+    <div id="popup-container" class="popup-container">
+        <div class="popup">
+            <div class="js-login-result login-result">
+                <p style="
+                    font-size: 18px;
+                    font-weight: bold;
+                ">nothing !</p>
+            </div>
+            <div class="close-button-container">
+                <a href="#" class="popup-close">&#x2716;</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="back-button-container">
+        <button class="js-back-button back-button sign-up-link">Back</button>
+    </div>
+
+    <div class="author">
+        <img src="../data/icons/bk-192x192.png">
+        <p>Created by BK</p>
+    </div>
+
+    <script type="module" src="./scripts/01-admin-login-page.js"></script>
+</body>
+</html>

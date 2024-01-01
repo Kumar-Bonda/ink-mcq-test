@@ -1,0 +1,326 @@
+body {
+    margin-top: 110px;
+}
+
+.delete-account-label {
+    color: rgb(48, 48, 56);
+    font-family: 'DM Serif Display';
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.details-container {
+    display: flex;
+    justify-content: center;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.35);
+    border-radius: 4px;
+    height: 220px;
+    width: 420px;
+    margin-bottom: 35px;
+}
+
+.suggestion-message {
+    color: rgb(48, 48, 56);
+}
+
+.username-line,
+.password-line {
+    width: 305px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-name,
+.password {
+    padding: 6px 10px;
+    width: 250px;
+    border-radius: 4px;
+    font-family: Onest;
+    font-size: 17px;
+}
+
+.user-name::placeholder,
+.password::placeholder {
+    font-family: Onest;
+}
+
+.delete-result {
+    margin-top: 10px;
+}
+
+.delete-button,
+.yes-button,
+.no-button,
+.okay-button {
+    font-family: Onest;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 4px 16px;
+    background-color: rgb(48, 48, 56);
+    color: white;
+    border: 2px solid rgb(48, 48, 56);
+    border-radius: 4px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition:
+        background-color 0.2s,
+        color 0.2s;
+}
+
+.delete-button {
+    margin: 0;
+}
+
+.delete-button:hover,
+.yes-button:hover,
+.no-button:hover,
+.okay-button:hover {
+    color: rgb(48, 48, 56);
+    background-color: white;
+}
+
+.delete-button:active,
+.yes-button:active,
+.no-button:active,
+.okay-button:active {
+    color: white;
+    background-color: rgb(106, 106, 118);
+}
+
+.popup-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    background: rgba(0, 0, 0, 0.55);
+    transition: all 0.7s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.popup-container:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background: white;
+    width: 430px;
+    height: 150px;
+    border-radius: 4px;
+}
+
+.delete-result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.popup-close {
+    position: absolute;
+    top: 2px;
+    right: 7px;
+    text-decoration: none;
+    font-size: 19px;
+    color: black;
+    width: 21px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.15s;
+}
+
+.popup-close:hover {
+    background-color: rgba(96, 96, 96, 0.45);
+}
+
+.yes-and-no {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.result-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.suggested-buttons {
+    margin: 0px auto 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 550px;
+    margin-bottom: 30px;
+}
+
+.goToMenu-button,
+.addAccount-page,
+.accountsInfo-page {
+    font-family: Onest;
+    text-decoration: none;
+    padding: 3px 10px;
+    background-color: rgb(48, 48, 56);
+    color: white;
+    border: 2px solid rgb(48, 48, 56);
+    border-radius: 4px;
+    cursor: pointer;
+    transition:
+        background-color 0.2s,
+        color 0.2s;
+}
+
+.goToMenu-button:hover,
+.addAccount-page:hover,
+.accountsInfo-page:hover {
+    color: rgb(48, 48, 56);
+    background-color: white;
+}
+
+.goToMenu-button:active,
+.addAccount-page:active,
+.accountsInfo-page:active {
+    color: white;
+    background-color: rgb(106, 106, 118);
+}
+
+.accounts-info-table {
+    font-family: Onest;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    width: 550px;
+}
+
+td,
+th {
+    border: 2px solid rgb(208,195,195);
+    padding: 8px;
+    text-align: center;
+}
+
+.table-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table-header img {
+    filter: brightness(0) saturate(100%) invert(99%) sepia(1%) saturate(4%) hue-rotate(15deg) brightness(110%) contrast(100%);
+}
+
+tr:nth-child(even) {
+    background-color: rgb(242, 242, 242);
+}
+
+tr:hover {
+    background-color: rgb(221, 221, 221);
+}
+
+th {
+    font-size: 18px;
+    background-color: rgb(56, 173, 251);
+    color: white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
+    body {
+        margin-top: 95px;
+    }
+
+    .delete-account-label {
+        font-size: 23px;
+    }
+    
+    .details {
+        height: 190px;
+        width: 340px;
+        margin-bottom: 28px;
+    }
+
+    .suggestion-message {
+        font-size: 15px;
+    }
+
+    .username-line,
+    .password-line {
+        width: 275px;
+    }
+
+    .username-line img,
+    .password-line img,
+    .table-header img {
+        width: 23px;
+    }
+
+    .user-name,
+    .password {
+        padding: 6px 8px;
+        width: 230px;
+        font-size: 16px;
+    }
+
+    .delete-button,
+    .yes-button,
+    .no-button,
+    .okay-button {
+        font-size: 15px;
+    }
+
+    .popup {
+        width: 320px;
+        height: 160px;
+    }
+
+    .suggested-buttons {
+        width: 340px;
+    }
+
+    .goToMenu-button,
+    .addAccount-page,
+    .accountsInfo-page {
+        font-size: 14px;
+        padding: 3px 5px;
+    }
+
+    .accounts-info-table {
+        width: 340px;
+    }
+    
+    td {
+        padding: 5px;
+        font-size: 15px;
+    }
+
+    th {
+        padding: 10px 8px;
+        font-size: 16px;
+    }
+}

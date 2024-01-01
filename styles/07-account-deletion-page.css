@@ -1,0 +1,258 @@
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.delete-account-label {
+    color: rgb(48, 48, 56);
+    font-family: 'DM Serif Display';
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.details-container {
+    display: flex;
+    justify-content: center;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.35);
+    border-radius: 4px;
+    height: 220px;
+    width: 420px;
+}
+
+.suggestion-message {
+    color: rgb(48, 48, 56);
+}
+
+.username-line,
+.password-line {
+    width: 305px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-name,
+.password {
+    padding: 6px 10px;
+    width: 250px;
+    border-radius: 4px;
+    font-family: Onest;
+    font-size: 17px;
+}
+
+.user-name::placeholder,
+.password::placeholder {
+    font-family: Onest;
+}
+
+.delete-result {
+    margin-top: 10px;
+}
+
+.delete-button,
+.yes-button,
+.no-button,
+.signUp-button {
+    font-family: Onest;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: rgb(48, 48, 56);
+    color: white;
+    border: 2px solid rgb(48, 48, 56);
+    border-radius: 4px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition:
+        background-color 0.2s,
+        color 0.2s;
+}
+
+.delete-button {
+    margin: 0;
+    padding: 4px 18px;
+}
+
+.yes-button,
+.no-button {
+    padding: 3px 16px;
+}
+
+.delete-button:hover,
+.yes-button:hover,
+.no-button:hover,
+.signUp-button:hover {
+    color: rgb(48, 48, 56);
+    background-color: white;
+}
+
+.delete-button:active,
+.yes-button:active,
+.no-button:active,
+.signUp-button:active {
+    color: white;
+    background-color: rgb(106, 106, 118);
+}
+
+.popup-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    background: rgba(0, 0, 0, 0.55);
+    transition: all 0.7s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.popup-container:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background: white;
+    width: 430px;
+    height: 150px;
+    border-radius: 4px;
+}
+
+.delete-result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.popup-close {
+    position: absolute;
+    top: 2px;
+    right: 7px;
+    text-decoration: none;
+    font-size: 19px;
+    color: black;
+    width: 21px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.15s;
+}
+
+.popup-close:hover {
+    background-color: rgba(96, 96, 96, 0.45);
+}
+
+.yes-and-no {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.result-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signUp-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.signUp-button {
+    font-size: 16px;
+    padding: 4px 15px;
+    margin-top: 20px;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.author img {
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+}
+
+.author p {
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+    .delete-account-label {
+        font-size: 23px;
+    }
+
+    .details {
+        height: 190px;
+        width: 340px;
+    }
+
+    .suggestion-message {
+        font-size: 15px;
+    }
+
+    .username-line,
+    .password-line {
+        width: 275px;
+    }
+
+    .username-line img,
+    .password-line img {
+        width: 23px;
+    }
+
+    .user-name,
+    .password {
+        padding: 6px 8px;
+        width: 230px;
+        font-size: 16px;
+    }
+
+    .delete-button,
+    .signUp-button,
+    .yes-button,
+    .no-button {
+        font-size: 15px;
+    }
+
+    .popup {
+        width: 320px;
+        height: 160px;
+    }
+}

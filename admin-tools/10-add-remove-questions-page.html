@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <title>INK MCQ Test</title>
+
+    <!-- font-styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Onest:wght@300;500;700&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="icon" href="../data/icons/ink-192x192.png">
+
+    <!-- css-styles -->
+    <link rel="stylesheet" href="../styles/general.css">
+    <link rel="stylesheet" href="./styles/10-add-remove-questions-page.css">
+</head>
+<body>
+    <header class="header">
+        <p class="header-label">Add/Remove</p>
+        <div class="date-and-time">
+            <p class="js-date date"></p>
+            <p class="js-time time">hh:mm AM</p>
+        </div>
+    </header>
+    
+    <div class="subject-info-header">
+        <div class="js-subject-info subject-info">
+            <p class="subject-name">Subject: No Name</p>
+            <p class="questions-count">No.of Questions: 0</p>
+        </div>
+    </div>
+
+    <div class="suggested-buttons">
+        <a href="./02-admin-menu-page.html" class="goToMenu-button">Go to Menu</a>
+        <a href="./11-change-qustion-paper.html" class="changePaper-page">Change Subject</a>
+    </div>
+
+    <p class="js-sugesstion-message sugesstion-message"></p>
+
+    <div class="js-questions-container questions-container">
+        <div class="no-question-paper">
+            <img src="../data/icons/no-data.svg">
+            <p>No Question Paper</p>
+        </div>
+    </div>
+
+    <div class="js-add-question-container add-question-container"></div>
+
+    <div id="popup-container" class="popup-container">
+        <div class="popup">
+            <div class="js-empty-message empty-message">
+                <p style="
+                    font-size: 18px;
+                    font-weight: bold;
+                ">nothing !</p>
+            </div>
+            <a href="#done-button" class="popup-close">&#x2716;</a>
+        </div>
+    </div>
+
+    <div class="add-button-container">
+        <button class="js-add-button add-button">Add Question</button>
+    </div>
+
+    <script type="module" src="./scripts/10-add-remove-questions-page.js"></script>
+</body>
+</html>

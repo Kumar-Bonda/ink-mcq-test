@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <title>INK MCQ Test - Instructions</title>
+
+    <!-- font-styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Onest:wght@300;500;700&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="icon" href="./data/icons/ink-192x192.png">
+
+    <!-- css-styles -->
+    <link rel="stylesheet" href="./styles/general.css">
+    <link rel="stylesheet" href="./styles/02-instructions-page.css">
+</head>
+<body>
+    <header class="header">
+        <p class="header-label">INK MCQ Test</p>
+        <div class="date-and-time">
+            <p class="js-date date"></p>
+            <p class="js-time time">hh:mm AM</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="instructions-container">
+            <p class="instructions-label">Instructions</p>
+            <ol>
+                <li>Test has <span class="js-question-count"></span> multiple-choice questions, each worth 2 mark.</li>
+                <li>Read carefully and choose the best answer from the four options.</li>
+                <li>There is only one correct answer.</li>
+                <li>You will get the result after the submission.</li>
+            </ol>
+        </div>
+    
+        <div class="note-container">
+            <p class="note-label">Note</p>
+            <ol>
+                <li>Each question contains a 'Save' button.</li>
+                <li>Click on that 'Save' button each time you select an option.</li>
+                <li style="color: green;">Your answers shouldn't be stored without saving.</li>
+                <li>You can change the selected option before submitting.</li>
+                <li style="color: green;">Never refresh the window at any stage of the test.</li>
+            </ol>
+        </div>
+    </div>
+
+    <p class="check-message">
+        Click on
+        <b>
+            Next
+        </b>
+        when you're ready
+    </p>
+
+    <div class="next-link-container">
+        <a href="./03-q-and-a-page.html" class="next-link">Next</a>
+    </div>
+
+    <script type="module" src="./scripts/02-instructions-page.js"></script>
+</body>
+</html>

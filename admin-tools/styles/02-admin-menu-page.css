@@ -1,0 +1,130 @@
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.first-line {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.second-line {
+    display: flex;
+    justify-content: center;
+}
+
+.signed-accounts,
+.question-paper,
+.admin-accounts {
+    background-color: rgb(48, 48, 56);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 2px solid rgb(48, 48, 56);
+    width: 200px;
+    padding: 6px 0px;
+    position: relative;
+    transition:
+        box-shadow 0.3s ease-in-out,
+        background-color 0.3s ease-in-out,
+        border 0.3s ease-in-out,
+        color 0.3s ease-in-out,
+        filter 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.menu-option-label {
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(282deg) brightness(103%) contrast(101%);
+}
+
+.signed-accounts:hover .menu-icon,
+.question-paper:hover .menu-icon,
+.admin-accounts:hover .menu-icon {
+    filter: brightness(0) saturate(100%) invert(16%) sepia(17%) saturate(433%) hue-rotate(201deg) brightness(89%) contrast(87%);
+}
+
+.signed-accounts:hover,
+.question-paper:hover,
+.admin-accounts:hover {
+    background-color: white;
+    color: rgb(48, 48, 56);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.35);
+}
+
+.options {
+    opacity: 0;
+    position: absolute;
+    width: 200px;
+    top: 36px;
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.35);
+    border-radius: 4px;
+    border: 2px solid rgb(48, 48, 56);
+    border-bottom: none;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+}
+
+.options a {
+    font-family: Onest;
+    font-weight: normal;
+    text-decoration: none;
+    text-wrap: nowrap;
+    text-align: center;
+    width: 200px;
+    color: rgb(48, 48, 56);
+    padding: 6px 0px;
+    border-bottom: 2px solid rgb(48, 48, 56);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.options a:hover {
+    background-color: rgb(48, 48, 56);
+    color: white;
+}
+
+.signed-accounts:hover .options,
+.question-paper:hover .options,
+.admin-accounts:hover .options {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.signed-accounts {
+    margin-right: 50px;
+}
+
+@media (min-width: 320px) and (max-width: 550px) {
+    .signed-accounts {
+        margin-right: 0;
+    }
+    
+    .first-line {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 95px;
+        margin-bottom: 16px;
+    }
+}

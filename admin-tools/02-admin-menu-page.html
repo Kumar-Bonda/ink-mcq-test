@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <title>INK MCQ Test - Admin Menu</title>
+
+    <!-- font-styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Onest:wght@300;500;700&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="icon" href="../data/icons/ink-192x192.png">
+
+    <!-- css-styles -->
+    <link rel="stylesheet" href="../styles/general.css">
+    <link rel="stylesheet" href="./styles/02-admin-menu-page.css">
+</head>
+<body>
+    <header class="header">
+        <p class="header-label">Admin Menu</p>
+        <div class="date-and-time">
+            <p class="js-date date"></p>
+            <p class="js-time time">hh:mm AM</p>
+        </div>
+    </header>
+
+    <div class="first-line">
+        <div class="signed-accounts">
+            <p class="menu-option-label">
+                <img src="../data/icons/user-account-icon.svg" class="menu-icon">
+                &nbsp; Signed Accounts
+            </p>
+            <div class="options">
+                <a href="./03-accounts-info-page.html">
+                    Show Accounts
+                </a>
+                <a href="./04-add-account-page.html">
+                    Add/Remove Account
+                </a>
+                <a href="./06-results-page.html">
+                    Test Results
+                </a>
+            </div>
+        </div>
+
+        <div class="question-paper">
+            <p class="menu-option-label">
+                <img src="../data/icons/question-paper.svg" class="menu-icon">
+                &nbsp; Question Paper
+            </p>
+            <div class="options">
+                <a href="./10-add-remove-questions-page.html">
+                    Add/Remove Questions
+                </a>
+                <a href="./11-change-qustion-paper.html">
+                    Change Question Paper
+                </a>
+                <a href="./12-add-new-paper-page.html">
+                    Add New Paper
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="second-line">
+        <div class="admin-accounts">
+            <p class="menu-option-label">
+                <img src="../data/icons/admin-account-icon.svg" class="menu-icon">
+                &nbsp; Admin Accounts
+            </p>
+            <div class="options">
+                <a href="./07-admin-accounts-info-page.html">
+                    Show Accounts
+                </a>
+                <a href="./08-add-admin-page.html">
+                    Add an admin
+                </a>
+                <a href="./09-delete-admin-page.html">
+                    Delete an admin
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./scripts/02-admin-menu-page.js"></script>
+</body>
+</html>

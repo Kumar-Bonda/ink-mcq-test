@@ -1,0 +1,139 @@
+body {
+    margin-top: 110px;
+}
+
+.questions-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.question-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.35);
+    border-radius: 4px;
+    width: 550px;
+    height: fit-content;
+    padding: 20px 5px;
+    margin-bottom: 30px;
+}
+
+.question {
+    margin: 0px 22.5px 5px 22.5px;
+}
+
+.option {
+    font-family: Onest;
+    display: flex;
+    align-items: center;
+    border: 2px solid rgb(48, 48, 56);
+    border-radius: 3px;
+    width: 500px;
+    height: fit-content;
+    padding: 5px 0px;
+    margin: 4px auto 4px auto;
+}
+
+.option p {
+    margin-left: 15px;
+}
+
+.correctAnswer {
+    border: 2px solid rgb(56, 173, 251);
+    background-color: rgb(56, 173, 251);
+    color: white;
+}
+
+.wrongAnswer {
+    border: 2px solid rgb(255,71,77);
+    background-color: rgb(255,71,77);
+    color: white;
+}
+
+.icon-container {
+    background-color: rgb(48, 48, 56);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    border-radius: 15px;
+}
+
+.checkmark-icon,
+.into-icon {
+    width: 20px;
+    filter: brightness(0) saturate(100%) invert(86%) sepia(96%) saturate(13%) hue-rotate(98deg) brightness(109%) contrast(97%);
+}
+
+.is-user-picked-option {
+    display: flex;
+    justify-content: space-between;
+}
+
+.is-user-picked-option .icon-container {
+    margin-right: 15px;
+}
+
+.close-link-container {
+    display: flex;
+    justify-content: center;
+}
+
+.close-link {
+    font-family: Onest;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 4px 20px;
+    background-color: rgb(48, 48, 56);
+    color: white;
+    border: 2px solid rgb(48, 48, 56);
+    border-radius: 4px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: opacity 0.15s;
+}
+
+.close-link:hover {
+    color: rgb(48, 48, 56);
+    background-color: white;
+}
+
+.close-link:active {
+    color: white;
+    background-color: rgb(106, 106, 118);
+}
+
+@media (min-width: 320px) and (max-width: 655px) {
+    body {
+        margin-top: 112px;
+    }
+
+    .question-container {
+        margin-top: -5px;
+        width: 330px;
+        padding: 15px 5px;
+    }
+
+    .question {
+        margin-left: 18px;
+    }
+
+    .option {
+        width: 290px;
+        padding: 4px 0px;
+        margin: 3px auto 3px auto;
+    }
+    
+    .close-link {
+        font-size: 15px;
+        padding: 4px 18px;
+    }
+
+    .close-link {
+        margin-top: -8px;
+        margin-bottom: 20px;
+    }
+}
