@@ -34,7 +34,7 @@ document.querySelector('.js-sugesstion-message')
         If you want to edit
         <b>Other Subject</b>,
         go to
-        <a href="./11-change-question-paper.html" style ="color: black;">
+        <a href="./11-change-qustion-paper.html" style ="color: black;">
             <b>Change Subject</b>
         </a>
         page and select the subject you want then come to this page to edit!
